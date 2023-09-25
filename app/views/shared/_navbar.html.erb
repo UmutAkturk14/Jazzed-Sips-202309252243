@@ -22,7 +22,7 @@
 
       <% menu_items.each_with_index do |item, index| %>
         <li>
-          <%= link_to item[:text], item[:path], class: "text-sm text-gray-400 hover:text-gray-500", id: item[:id] %>
+          <%= link_to item[:text], item[:path], class: "text-lg text-gray-400 hover:text-gray-500", id: item[:id] %>
         </li>
 
         <% unless index == menu_items.size - 1 %>

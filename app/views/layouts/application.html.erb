@@ -16,11 +16,9 @@
 
   <body class="flex flex-col min-h-screen m-0 bg-amber-50">
     <%= render "shared/navbar" %>
-    <main class="container mx-auto mt-28 px-5 flex-grow">
-      <%# Render flashes if needed %>
-      <!-- <%= render "shared/flashes" %> -->
-      <%= yield %>
-    </main>
+    <%# Render flashes if needed %>
+    <!-- <%= render "shared/flashes" %> -->
+    <%= yield %>
     <%= render "shared/footer" %>
   </body>
 </html>
