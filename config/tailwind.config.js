@@ -10,8 +10,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Lora', ...defaultTheme.fontFamily.sans],
+        "heading": ['Croissant One', "cursive"],
       },
+
+      dropShadow: {
+        "3xl": "0 35px 35px rgba(0, 0, 0, 0.5)"
+      }
     },
   },
   plugins: [
