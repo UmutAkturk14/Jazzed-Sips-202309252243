@@ -107,5 +107,16 @@ $(document).ready(function() {
       // Add the new class to the link with the specified ID
       $(linkId).toggleClass("text-gray-400 text-amber-600 font-bold");
   }
+
+
+  $("nav ul a").click(function (e) {
+    e.preventDefault();
+    const url = $(this).attr("href");
+    $(".page-content").fadeOut(500, function() {
+      window.location.href = url;
+    });
+  });
+
+
 });
 </script>
